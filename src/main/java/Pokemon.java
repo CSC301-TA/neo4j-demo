@@ -46,10 +46,12 @@ public class Pokemon extends Endpoint {
                 this.dao.insertPokemon(name, pid, description, type1, type2);
             } catch (Exception e) {
                 r.sendResponseHeaders(500, -1);
+                e.printStackTrace();
                 return;
             }
             r.sendResponseHeaders(200, -1);
         } catch (Exception e) {
+            e.printStackTrace();
             r.sendResponseHeaders(500, -1);
         }
     }

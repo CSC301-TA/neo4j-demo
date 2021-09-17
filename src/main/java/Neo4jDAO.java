@@ -5,7 +5,7 @@ public class Neo4jDAO {
     private final Session session;
     private final Driver driver;
 
-    private final String uriDb = "bolt://neo4j:7687";
+    private final String uriDb = "bolt://localhost:7687";
     private final String username = "neo4j";
     private final String password = "123456";
 
